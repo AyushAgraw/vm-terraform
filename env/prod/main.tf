@@ -20,3 +20,4 @@ module "public_ip" {
   source = "../../child/azurerm_public_ip"
   pip = var.PIPS
 }
+
