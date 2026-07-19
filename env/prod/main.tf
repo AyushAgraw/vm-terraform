@@ -21,3 +21,8 @@ module "public_ip" {
   pip = var.PIPS
 }
 
+module "nic" {
+  depends_on = [ module.public_ip, module.subnet ]
+  source = "../../child/azurerm_network_interface"
+  nics = var.NICS
+}
