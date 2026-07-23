@@ -1,7 +1,7 @@
 resource "azurerm_network_security_rule" "name" {
   for_each = var.nsg_rules
    name                        = each.value.nsg_rule_name
-  priority                    = 100
+  priority                    = each.value.nsg_rule_priority
   direction                   = "Inbound"
   access                      = "Allow"
   protocol                    = "Tcp"
