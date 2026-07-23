@@ -3,3 +3,7 @@ variable "VNETS" {}
 variable "SUBNETS" {}
 variable "PIPS" {}
 variable "NICS" {}
+variable "VMS" {}
+variable "NSGS" {}
+variable "NSG_RULES" {}
+variable "NSG_ALLOCATION" {}
